@@ -5,7 +5,25 @@ body {
     background-color: #f4f4f4;
 }
 
-h1, p {
+nav {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline ;
+}
+
+h1 {
     text-align: center;
     color: #333;
     margin-top: 20px;
@@ -13,7 +31,7 @@ h1, p {
 
 table{
     border-collapse: collapse;
-    width: 100%;
+    margin: 20px auto;
 }
 
 table, th, td {
@@ -21,11 +39,11 @@ table, th, td {
 }
 
 th, td {
-    padding: 8px;
+    padding: 20px;
     text-align: center;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+th {
+    background-color: #4CAF50;
+    color: white;
 }
