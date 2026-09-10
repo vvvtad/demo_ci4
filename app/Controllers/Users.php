@@ -6,7 +6,7 @@ class Users extends BaseController
 {
     public function users(): string
     {
-        $user = array(
+        $data['users'] = array(
             [   
                 'name' => 'Papa Louie',
                 'email' => 'papa.louie@example.com',
@@ -34,7 +34,7 @@ class Users extends BaseController
             ]
         );
 
-        return view('users', $user);
+        return view('users', $data);
     }
   
 }

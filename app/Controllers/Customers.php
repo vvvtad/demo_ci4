@@ -6,7 +6,7 @@ class Customers extends BaseController
 {
     public function customers(): string
     {
-        $customer = array(
+        $data['customers'] = array(
             [   
                 'name' => 'Prudence',
                 'image' => 'https://static.wikia.nocookie.net/fliplinestudios/images/f/f8/086_a.jpg/revision/latest?cb=20130910192702.jpg',
@@ -34,6 +34,6 @@ class Customers extends BaseController
             ]
         );
 
-        return view('customers', $customer);
+        return view('customers', $data);
     }
 }
